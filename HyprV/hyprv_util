@@ -16,28 +16,39 @@ get_theme() {
 }
 
 update_theme() {
-  #set the xfce and GTK theme
-  xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
-  gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-  xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
-  gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
+    #set the xfce and GTK theme
+    if [[ $VER == "v1" || $VERTO == "v1-" ]]; then
+        xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+        gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+    else 
+        xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
+        gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
+    fi
+
+    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
+}
+
+get_ver() {
+    VER=$(readlink -f ~/.config/waybar/config.jsonc | cut -d '-' -f1 | cut -d '/' -f8)
 }
 
 restart_waybar() {
     #restart the waybar
     pkill waybar
-    waybar
+    waybar & 
 }
 
 set_current_background() {
     get_theme
-   
+    get_ver
+    
     if [[ ! -z "$SET_BG" ]]; then
         #set the current background
         if [[ $THEMEIS == "dark.css" ]]; then
-            swww img ~/.config/HyprV/backgrounds/'v2-background-dark.jpg'
+            swww img ~/.config/HyprV/backgrounds/$VER'-background-dark.jpg'
         else
-            swww img ~/.config/HyprV/backgrounds/'v2-background.jpg'
+            swww img ~/.config/HyprV/backgrounds/$VER'-background.jpg'
         fi
     else
         swww img $SET_BG
