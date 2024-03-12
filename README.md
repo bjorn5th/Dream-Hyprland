@@ -53,7 +53,7 @@ polkit-kde-agent pamixer pavucontrol brightnessctl bluez \
 wireplumber pipewire qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg \
 qt5-quickcontrols2 qt5-graphicaleffects sddm \
 gtk3 papirus-icon-theme nwg-look-bin jq python-requests \
-bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin file-roller btop \
+bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin file-roller htop \
 pacman-contrib starship ttf-jetbrains-mono-nerdt tf-nerd-fonts-symbols	ttf-nerd-fonts-symbols-mono\
 noto-fonts-emoji lxappearance xfce4-settings sddm-sugar-candy-git
 ```

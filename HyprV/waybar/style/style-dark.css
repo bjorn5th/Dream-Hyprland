@@ -8,12 +8,12 @@
 }
 
 window#waybar {
-    background: #e7e7ec;
-    color: #2b2b2c;
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
 }
 
 tooltip {
-    background: #e7e7ec;
+    background: #1e1e2e;
     opacity: 0.8;
     border-radius: 10px;
     border-width: 2px;
@@ -22,7 +22,7 @@ tooltip {
 }
 
 tooltip label{
-    color: #2b2b2c;
+    color: #cdd6f4;
 }
 
 #workspaces button {
@@ -54,12 +54,14 @@ tooltip label{
 }
 
 #custom-launch_wofi,
+#custom-launch_thunar,
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
 #custom-power_profile,
 #custom-weather,
 #custom-myhyprv,
+#custom-taskbar,
 #window,
 #cpu,
 #disk,
@@ -72,19 +74,21 @@ tooltip label{
 #tray,
 #temperature,
 #workspaces,
+#idle_inhibitor,
 #backlight {
-    background: #e7e7ec;
-    opacity: 0.8;
-    padding: 0px 8px;
-    margin: 0px 3px;
+    background: #1e1e2e;
+    opacity: 0.7;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
     border: 0px;
 }
 
-#custom-launch_wofi, #cpu {
+#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #custom-taskbar, {
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark{
+#custom-light_dark, #custom-power_btn, #workspaces, #custom-taskbar, #pulseaudio.microphone, #disk, #custom-updates {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -99,32 +103,31 @@ tooltip label{
     padding-left: 5px;
 }
 
-#custom-power_profile, #battery, #temperature {
-    color: #1d7715;
+#custom-power_profile {
+    color: #a6e3a1;
     border-left: 0px;
     border-right: 0px;
 }
 
-#window {
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 #custom-launch_wofi {
-    color: #407cdd;
+    color: #89b4fa;
     margin-left: 10px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: #407cdd;
+    color: #89b4fa;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #ad6bfd;
+    color: #cba6f7;
     border-left: 0px;
     border-right: 0px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-left: 0px;
 }
