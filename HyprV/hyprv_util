@@ -18,8 +18,8 @@ get_theme() {
 update_theme() {
     #set the xfce and GTK theme
     if [[ $VER == "v1" || $VERTO == "v1-" ]]; then
-        xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
-        gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+        xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus$SWITCHTO"
+        gsettings set org.gnome.desktop.interface icon-theme "Papirus$SWITCHTO"
     else 
         xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
         gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"

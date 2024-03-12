@@ -5,7 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 20,
+    "height": 18,
     "modules-left": [
         "custom/launch_wofi",
         "custom/launch_thunar",
