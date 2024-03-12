@@ -84,11 +84,11 @@ tooltip label{
     border: 0px;
 }
 
-#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #custom-taskbar, {
+#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #custom-taskbar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-power_btn, #workspaces, #custom-taskbar, #pulseaudio.microphone, #disk, #custom-updates {
+#custom-light_dark, #custom-power_btn, #workspaces, #custom-taskbar, #pulseaudio.microphone, #disk, #custom-weather {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
