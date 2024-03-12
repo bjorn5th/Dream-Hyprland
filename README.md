@@ -1,4 +1,4 @@
-# Hyprland dream config
+# Hyprland config
 
 ### installing yay (required package managerr)
 ```bash
