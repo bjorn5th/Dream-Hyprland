@@ -14,7 +14,7 @@
         "cpu",
         "memory",
         "disk",
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "wlr/taskbar"
     ],
     "modules-center": [
@@ -54,9 +54,9 @@
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 20,
+        "icon-size": 18,
         "all-outputs": true,
-        "tooltip-format": "{name} - {title}",
+        "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
@@ -124,22 +124,11 @@
         "tooltip": true
     },
 
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": true,
+        "all-outputs": false,
         "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        }
+	"active-only": false
     },
 
     "tray": {
