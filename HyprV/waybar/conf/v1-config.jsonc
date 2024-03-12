@@ -15,7 +15,8 @@
         "memory",
         "disk",
         "hyprland/workspaces",
-        "wlr/taskbar"
+        "wlr/taskbar",
+        "hyprland/window"
     ],
     "modules-center": [
         "idle_inhibitor",
