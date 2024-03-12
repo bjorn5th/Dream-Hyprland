@@ -3,7 +3,7 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0;
 }
 
@@ -25,11 +25,6 @@ tooltip label{
     color: #cdd6f4;
 }
 
-#workspaces {
-    padding-right: 0px;
-    padding-left: 5px;
-    border-radius: 10px;
-}
 
 #workspaces button {
     padding: 5px;
@@ -66,7 +61,7 @@ tooltip label{
 #custom-power_btn,
 #custom-power_profile,
 #custom-weather,
-#custom-taskbar,
+#taskbar,
 #window,
 #cpu,
 #disk,
@@ -89,17 +84,22 @@ tooltip label{
     border: 0px;
 }
 
-#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #custom-taskbar {
+#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #taskbar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-power_btn, #workspaces, #custom-taskbar, #pulseaudio.microphone, #disk, #custom-weather {
+#custom-light_dark, #custom-launch_thunar, #workspaces, #taskbar, #pulseaudio.microphone, #disk, #custom-weather {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
 
 #temperature.critical {
     color: #e92d4d;
+}
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+    border-radius: 10px;
 }
 
 #taskbar {
