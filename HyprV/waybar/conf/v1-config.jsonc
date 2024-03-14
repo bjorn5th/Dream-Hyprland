@@ -9,6 +9,7 @@
     "modules-left": [
         "custom/launch_wofi",
         "custom/launch_thunar",
+        "custom/launch_wolf",
         "hyprland/workspaces",
         "wlr/taskbar",
         "hyprland/window"
@@ -16,8 +17,8 @@
     "modules-center": [
         "idle_inhibitor",
         "clock",
-        "custom/weather",
-        "custom/updates"
+        "custom/updates",
+        "custom/weather"
     ],
     "modules-right": [
         "cpu",
@@ -30,7 +31,8 @@
         "temperature",
         "custom/power_profile",
         "battery",
-        "custom/lock_screen",
+        "hyprland/language",
+        // "custom/lock_screen",
         "custom/power_btn",
         "custom/light_dark"
     ],
@@ -44,6 +46,12 @@
     "custom/launch_wofi": {
         "format": "",
         "on-click": "sh -c '(sleep 0.5s; pkill wofi || wofi -c ~/.config/HyprV/wofi/config-lmenu)' & disown",
+        "tooltip": false
+    },
+    
+    "custom/launch_wolf": {
+        "format":"",
+        "on-click": "exec librewolf",
         "tooltip": false
     },
 
@@ -74,11 +82,11 @@
         "tooltip": true
     },
 
-    "custom/lock_screen": {
-        "format": "",
-        "on-click": "sh -c '(sleep 0.5s; swaylock)' & disown",
-        "tooltip": false
-    },
+    // "custom/lock_screen": {
+    //     "format": "",
+    //     "on-click": "sh -c '(sleep 0.5s; swaylock)' & disown",
+    //     "tooltip": false
+    // },
 
     "custom/power_btn": {
         "format": "",
@@ -183,7 +191,6 @@
         "tooltip-format": "{icon} at {volume}%"
     },
 
-
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "",
@@ -195,6 +202,10 @@
         "scroll-step": 5,
         "tooltip": true,
         "tooltip-format": " at {volume}%"
-    }
+    },
 
+    "hyprland/language": {
+        "format": "  {short}",
+        "keyboard-name": "at-translated-set-2-keyboard"
+      }
 }

@@ -16,7 +16,7 @@ tooltip {
     background: #e7e7ec;;
     opacity: 0.8;
     border-radius: 10px;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: #11111b;
 }
@@ -38,23 +38,24 @@ tooltip label{
 #workspaces button.focused {
     color: #a6adc8;
     background: #eba0ac;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #workspaces button.urgent {
     color: #11111b;
     background: #a6e3a1;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #workspaces button:hover {
     background: #11111b;
     color: #cdd6f4;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #custom-launch_wofi,
 #custom-launch_thunar,
+#custom-launch_wolf,
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
@@ -71,6 +72,7 @@ tooltip label{
 #pulseaudio,
 #network,
 #tray,
+#language,
 #temperature,
 #workspaces,
 #window,
@@ -88,7 +90,7 @@ tooltip label{
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-launch_thunar, #workspaces, #taskbar, #pulseaudio.microphone, #disk, #custom-weather {
+#custom-light_dark, #custom-launch_wolf, #workspaces, #taskbar, #pulseaudio.microphone, #disk, #custom-weather {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
