@@ -73,6 +73,7 @@ tooltip label{
 #network,
 #tray,
 #language,
+#keyboard-state,
 #temperature,
 #workspaces,
 #window,
@@ -86,11 +87,11 @@ tooltip label{
     border: 0px;
 }
 
-#tray, #idle_inhibitor, #backlight, #custom-launch_wofi, #cpu, #workspaces, #taskbar {
+#tray, #clock, #backlight, #custom-launch_wofi, #cpu, #workspaces, #taskbar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-launch_wolf, #workspaces, #taskbar, #pulseaudio.microphone, #disk, #custom-weather {
+#custom-light_dark, #custom-launch_wolf, #workspaces, #taskbar, #idle_inhibitor, #pulseaudio.microphone, #disk {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
