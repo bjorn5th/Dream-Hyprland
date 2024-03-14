@@ -14,7 +14,7 @@ UPDATELOG="update.log"
 
 
 # Start update dotfiles
-read -rep $'[\e[1;33mACTION\e[0m] - Now the script will download the repository update and update the .config/HyprV directory. The existing directory will be renamed HyprV-bak. Continue updating? (y,n) ' CONTINST
+read -rep $'[\e[1;33mACTION\e[0m] - Now the script will download the repository update and update the .config/HyprV directory. The existing directory will be renamed HyprV-bak (hypr directory will not be changed). Continue updating? (y,n) ' CONTINST
 if [[ $CONTINST == "Y" || $CONTINST == "y" ]]; then
     echo -e "$CNT - Update starting..."
     git pull
