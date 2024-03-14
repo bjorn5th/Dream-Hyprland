@@ -18,9 +18,9 @@ read -rep $'[\e[1;33mACTION\e[0m] - Now the script will download the repository 
 if [[ $CONTINST == "Y" || $CONTINST == "y" ]]; then
     echo -e "$CNT - Update starting..."
     git pull
-    mv ~/Downloads/HyprV ~/Downloads/HyprV-bak &>> $UPDATELOG
     mv ~/.config/HyprV ~/.config/HyprV-bak &>> $UPDATELOG
     cp -R HyprV ~/.config/ &>> $UPDATELOG
+    cp ~/.config/HyprV-bak/waybar/conf/mesu.jsonc ~/.config/HyprV/waybar/conf &>> $UPDATELOG
     echo -e "\e[1A\e[K$COK - dotfiles updated."
 else
     echo -e "$CNT - This script will now exit, no changes were made to your system."
