@@ -49,7 +49,7 @@ sudo pacman -S lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver xf8
 ```bash
 yay -S hyprland kitty mako waybar swww swaylock-effects \
 wofi wlogout xdg-desktop-portal-hyprland swappy grim slurp thunar librewolf-bin \
-polkit-kde-agent pamixer pavucontrol brightnessctl bluez \
+polkit-gnome pamixer pavucontrol brightnessctl bluez \
 wireplumber pipewire qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg \
 qt5-quickcontrols2 qt5-graphicaleffects sddm \
 gtk3 papirus-icon-theme nwg-look-bin jq python-requests \
