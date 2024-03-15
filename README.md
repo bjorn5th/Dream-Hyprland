@@ -1,6 +1,12 @@
 # Hyprland config
 
+### Notes
+
+ - For the key binding to work correctly, which triggers logout when the power button is pressed, set ```HandlePowerKey=ignore``` in /etc/systemd/logind.conf
+
 ### installing yay (required package managerr)
+
+
 ```bash
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -11,6 +17,8 @@ cd # exit from yay directory
 ```
 
 ### For Nvidia cards (Do this before Hyprland install)
+
+
 ```bash
 sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader lib32-opencl-nvidia opencl-nvidia libxnvctrl
 ```
@@ -41,11 +49,15 @@ reboot
 ```
 
 ### If you also have Intel CPU with integrated graphics
+
+
 ```bash
 sudo pacman -S lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver xf86-video-intel
 ```
 
 ### installing Hyprland and needed packages
+
+
 ```bash
 yay -S hyprland kitty mako waybar swww swaylock-effects \
 wofi wlogout xdg-desktop-portal-hyprland swappy grim slurp thunar librewolf-bin \
