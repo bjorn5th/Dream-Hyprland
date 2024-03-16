@@ -59,7 +59,7 @@ sudo pacman -S lib32-mesa vulkan-intel lib32-vulkan-intel libva-intel-driver xf8
 
 
 ```bash
-yay -S hyprland kitty mako waybar swww swaylock-effects \
+yay -S hyprland kitty mako waybar swww hyprlock\
 wofi wlogout xdg-desktop-portal-hyprland swappy grim slurp thunar librewolf-bin \
 polkit-gnome pamixer pavucontrol brightnessctl bluez \
 wireplumber pipewire qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg \
@@ -69,3 +69,50 @@ bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin file-rolle
 pacman-contrib starship ttf-jetbrains-mono-nerdt tf-nerd-fonts-symbols	ttf-nerd-fonts-symbols-mono\
 noto-fonts-emoji lxappearance xfce4-settings sddm-sugar-candy-git
 ```
+### List of the packages that would be installed
+
+- hyprland: The Hyprland compositor
+- kitty: This is the default terminal
+- waybar: Status bar
+- swww: Desktop background image setting tool
+- hyprlock: Session locking tool
+- wofi: Application launcher menu
+- wlogout: Logout menu that allows for shutdown, reboot and sleep
+- mako: GUI notification daemon
+- xdg-desktop-portal-hyprland-git: xdg-desktop-portal backend for hyprland
+- Screenshot tools:
+    - swappy: Screenshot editor tool
+    - grim: Screenshot tool that grabs images from a Wayland compositor
+    - slurp: Region selector in a Wayland compositor
+- File management:
+    - thunar: File management
+    - thunar-archive-plugin: Provides a front ent for thunar to work with compressed files
+    - file-roller: Backend set of tools for working with compressed files
+- polkit-gnome: Get superuser access on some graphical application
+- python-requests: Execute pyhton scripts
+- pamixer: Audio settings tool
+    - pavucontrol: GUI for managing audio and audio devices
+- brightnessctl: Control monitor and keyboard bright level
+- Bluetooth:
+    - bluez: the bluetooth service
+    - bluez-utils: command line utilities to interact with bluettoth devices
+    - blueman: Graphical bluetooth manager
+- network-manager-applet: Applet for managing network connection
+- gvfs: Adds missing functionality to thunar such as automount usb drives
+- htop: Process manager
+- pacman-contrib: adds additional tools for pacman. needed for showing system updates in the waybar
+- starship: allows to customize the shell prompt
+- Fonts:
+    - ttf-jetbrains-mono-nerd
+    - noto-fonts-emoji
+    - ttf-nerd-fonts-symbols
+    - ttf-nerd-fonts-symbols-mono
+- lxappearance: GTK theme settings
+- xfce4-settings: Set of tools for xfce, needed to set GTK theme
+- sddm-git: developement version of SDDM which is a display manager for graphical login
+- sddm-sugar-candy-git: an sddm theme my theme is based on (copy of)
+
+##### The following projects have inspired me
+
+- https://gitlab.com/stephan-raabe/dotfiles
+- https://github.com/SolDoesTech

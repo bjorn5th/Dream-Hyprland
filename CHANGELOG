@@ -1,0 +1,42 @@
+Version 0.1.0
+https://github.com/bjorn5th/Dream-Hyprland/releases/tag/v0.1.0
+---------------------------------------------------------------------
+
+First release Version.
+Packages and modules:
+- hyprland
+- kitty
+- waybar
+- swww
+- hyprlock
+- wofi
+- wlogout
+- mako
+- xdg-desktop-portal-hyprland-git
+- swappy
+- grim
+- slurp
+- thunar
+- thunar-archive-plugin
+- file-roller
+- polkit-gnome
+- python-requests
+- pamixer
+- pavucontrol
+- brightnessctl
+- bluez
+- bluez-utils
+- blueman
+- network-manager-applet
+- gvfs
+- htop
+- pacman-contrib
+- starship
+- ttf-jetbrains-mono-nerd
+- noto-fonts-emoji
+- ttf-nerd-fonts-symbols
+- ttf-nerd-fonts-symbols-mono
+- lxappearance
+- xfce4-settings
+- sddm-git
+- sddm-sugar-candy-git
