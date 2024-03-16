@@ -43,7 +43,8 @@ install_stage=(
 	mako
 	waybar
 	swww
-	swaylock-effects
+	hyprlock 
+  hypridle
 	wofi
 	wlogout
 	xdg-desktop-portal-hyprland
@@ -275,7 +276,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
 	# Setup each appliaction
 	# check for existing config folders and backup
-	for DIR in hypr kitty mako swaylock waybar wlogout wofi; do
+	for DIR in hypr kitty mako waybar wlogout wofi; do
 		DIRPATH=~/.config/$DIR
 		if [ -d "$DIRPATH" ]; then
 			echo -e "$CAT - Config for $DIR located, backing up."
@@ -292,7 +293,6 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 	cp ~/.config/HyprV/hypr/* ~/.config/hypr/
 	ln -sf ~/.config/HyprV/kitty/kitty.conf ~/.config/kitty/kitty.conf
 	ln -sf ~/.config/HyprV/mako/conf/config-dark ~/.config/mako/config
-	ln -sf ~/.config/HyprV/swaylock/config ~/.config/swaylock/config
 	ln -sf ~/.config/HyprV/wlogout/layout ~/.config/wlogout/layout
 	ln -sf ~/.config/HyprV/wofi/config ~/.config/wofi/config
 	ln -sf ~/.config/HyprV/waybar/conf/v1-config.jsonc ~/.config/waybar/config.jsonc
