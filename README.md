@@ -2,7 +2,7 @@
 
 ### Notes
 
- - For the key binding to work correctly, which triggers logout when the power button is pressed, set ```HandlePowerKey=ignore``` in /etc/systemd/logind.conf
+ - For the key binding that triggers logout when the power button is pressed to work correctly, set ```HandlePowerKey=ignore``` in /etc/systemd/logind.conf
 
 ### installing yay (required package managerr)
 
