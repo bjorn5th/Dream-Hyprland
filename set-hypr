@@ -299,6 +299,9 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 	ln -sf ~/.config/HyprV/waybar/style/v1-style-dark.css ~/.config/waybar/style.css
 	ln -sf ~/.config/HyprV/wofi/style/v1-style-dark.css ~/.config/wofi/style.css
 
+  # add kitty as default terminal
+  sudo ln -s /usr/bin/kitty /usr/bin/xdg-terminal-exec
+
 	# add the Nvidia env file to the config (if needed)
 	if [[ "$ISNVIDIA" == true ]]; then
 		echo -e "\nsource = ~/.config/hypr/env_var_nvidia.conf" >>~/.config/hypr/hyprland.conf
