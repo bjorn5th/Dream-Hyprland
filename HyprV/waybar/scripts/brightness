@@ -12,15 +12,15 @@ get_backlight() {
 get_icon() {
 	backlight="$(brightnessctl g)"
 	current="${backlight%%%}"
-	if [[ ("$current" -ge "0") && ("$current" -le "52") ]]; then
+	if [[ ("$current" -ge "0") && ("$current" -le "19200") ]]; then
 		icon="$iDIR/brightness-20.png"
-	elif [[ ("$current" -ge "52") && ("$current" -le "103") ]]; then
+	elif [[ ("$current" -ge "28800") && ("$current" -le "38400") ]]; then
 		icon="$iDIR/brightness-40.png"
-	elif [[ ("$current" -ge "103") && ("$current" -le "155") ]]; then
+	elif [[ ("$current" -ge "48000") && ("$current" -le "57600") ]]; then
 		icon="$iDIR/brightness-60.png"
-	elif [[ ("$current" -ge "155") && ("$current" -le "207") ]]; then
+	elif [[ ("$current" -ge "67200") && ("$current" -le "76800") ]]; then
 		icon="$iDIR/brightness-80.png"
-	elif [[ ("$current" -ge "180") && ("$current" -le "255") ]]; then
+	elif [[ ("$current" -ge "86400") && ("$current" -le "96000") ]]; then
 		icon="$iDIR/brightness-100.png"
 	fi
 }

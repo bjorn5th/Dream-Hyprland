@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "hyprlock",
     "text" : "Lock"
 }
 
@@ -24,7 +24,7 @@
 
 {
     "label" : "suspend",
-    "action" : "swaylock && systemctl suspend",
+    "action" : "suspend",
     "text" : "Suspend"
 }
 
